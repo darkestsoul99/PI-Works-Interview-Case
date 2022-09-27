@@ -44,3 +44,7 @@ print(df2)
 
 csv_data = df2.to_csv('{}/output.csv'.format(os.getcwd())) # Save to a CSV File
 
+print(df2[df2['DISTINCT_PLAY_COUNT'] == 346])
+print(df2[df2['DISTINCT_PLAY_COUNT'] == 346].count()) # Number of users who listened 346 distinct songs
+
+print(df2.max(axis = 0)) # Max number of distincts songs played
